@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hiresource</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application', media: 'all' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body class="sign-in-page">
+    <%= render 'layouts/notifier' %>
+    <div id="app_content" class="content">
+      <%= yield %>
+    </div>
+  </body>
+</html>
